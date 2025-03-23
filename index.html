@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DalConnect - Your Guide to Student Life at Dalhousie</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Include Header -->
+    <div id="header"></div>
+
+    <main>
+        <div class="content-wrapper">
+            <div class="text-content">
+                <h1>Welcome to DalConnect</h1>
+                <p>
+                    Moving to a new city, adjusting to university life, and figuring out how things work can be overwhelming. 
+                    Whether you're a local student or an international student arriving in Halifax for the first time, 
+                    DalConnect is here to make your transition smoother.
+                </p>
+
+                <p>
+                    At Dalhousie University, students come from all over the world, each facing different challenges as they settle in. 
+                    International students may need to get their Social Insurance Number (SIN) for work, open a bank account, 
+                    or buy a SIM card to stay connected. Local students, on the other hand, may be searching for off-campus housing 
+                    or applying for a Nova Scotia ID. No matter your situation, DalConnect has all the information you need in one place.
+                </p>
+
+                <p>
+                    Our goal is to save you time by providing step-by-step guides, reliable resources, and essential checklists. 
+                    Instead of searching across multiple websites, DalConnect simplifies the process, helping you focus on what matters: 
+                    settling in, meeting new people, and starting your university journey on the right foot.
+                </p>
+            </div>
+
+            <div class="image-container">
+                <img src="images/Dal.jpeg" alt="Dalhousie University Campus" class="homepage-image">
+            </div>
+        </div>
+
+        <h2>What You Need to Know</h2>
+        <p>To help you get started, we’ve broken down the most important tasks into two categories:</p>
+
+        <h3>For International Students</h3>
+        <ul>
+            <li><strong>Apply for a Social Insurance Number (SIN)</strong> – Required to work in Canada and access government services.</li>
+            <li><strong>Open a Bank Account</strong> – Choose from banks like TD, RBC, or Scotiabank for easy access to your funds.</li>
+            <li><strong>Get a SIM Card</strong> – Stay connected with mobile providers such as Bell, Rogers, Fido, or Freedom Mobile.</li>
+        </ul>
+
+        <h3>Common for All Students</h3>
+        <ul>
+            <li><strong>Obtain a Nova Scotia ID Card</strong> – A government-issued ID that serves as an alternative to carrying your passport or driver's license.</li>
+            <li><strong>Find Accommodation</strong> – Whether you're living on campus or renting off-campus, finding the right place to stay is crucial. 
+                <a href="https://www.kijiji.ca/" target="_blank">Click here</a> to find off-campus accommodation on Kijiji.
+            </li>
+        </ul>
+
+        <h2 id="checklist">Checklist</h2>  <!-- Added id="checklist" -->
+<ul class="checklist">
+    <li>✅ Apply for a Social Insurance Number (SIN)</li>
+    <li>✅ Open a Bank Account</li>
+    <li>✅ Get a SIM Card</li>
+    <li>✅ Obtain a Nova Scotia ID Card</li>
+    <li>✅ Find Accommodation</li>
+</ul>
+    </main>
+
+    <!-- Include Footer -->
+    <div id="footer"></div>
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
+
+</body>
+</html>
